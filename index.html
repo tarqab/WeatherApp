@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+
+  <body>
+    <nav
+      id="back"
+      class="navbar navbar-expand-lg bg-body-tertiary ms-auto navbar-custom"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand text-white d-flex px-4" href="">
+          <span class="my-4 me-2"
+            ><i class="fa-solid fa-cloud fa-2xl"></i
+          ></span>
+          <div class="d-flex flex-column py-2 mt-2">
+            <p class="font-logo-first">Weather</p>
+            <p class="font-logo-second mb-3">tagline goes here</p>
+          </div>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+            <li class="nav-item">
+              <a
+                class="nav-link active home-navbar border rounded-pill"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="home">
+      <form>
+        <div class="input-search z-1 mt-2">
+          <input
+            type="text"
+            class="search-bar"
+            id="searchBar"
+            placeholder="find your city"
+            value=""
+          />
+          <button class="find-button" id="findButton">Find</button>
+        </div>
+      </form>
+      <div class="container mt-5 mb-1 z-1 position-relative">
+        <div class="row">
+          <div class="present-day col-md-4 text-white rounded-2">
+            <div class="d-flex justify-content-between">
+              <p>Friday</p>
+              <p>25 August</p>
+            </div>
+            <div>
+              <p>Cairo</p>
+              <div class="d-flex justify-content-around">
+                <h3 class="temperature">34°C</h3>
+                <p><i class="fa-solid fa-sun fa-lg"></i></p>
+              </div>
+              <p>Sunny</p>
+              <div class="mt-5">
+                <span class="me-2"
+                  ><i class="fa-solid fa-umbrella fa-lg me-1"></i>20%</span
+                >
+                <span class="me-2"
+                  ><i class="fa-solid fa-wind fa-lg me-1"></i>18km/h</span
+                >
+                <span class="me-2"
+                  ><i class="fa-regular fa-compass fa-lg me-1"></i>East</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="next-day col-md-4 text-white">
+            <h3 class="text-center">Saturday</h3>
+            <div class="card-body">
+              <div
+                class="h-100 d-flex flex-column justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-sun fa-xl mb-4"></i>
+                <p class="fs-2">41.7°C</p>
+                <p>25.5°C</p>
+                <p>Sunny</p>
+              </div>
+            </div>
+          </div>
+          <div class="after-next-day col-md-4 text-white">
+            <h3 class="text-center">Sunday</h3>
+            <div class="card-body">
+              <div
+                class="h-100 py-5 d-flex flex-column justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-sun fa-xl mb-4"></i>
+                <p class="fs-2">41.7°C</p>
+                <p>25.5°C</p>
+                <p>Sunny</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layer"></div>
+    </div>
+    <footer class="footer">
+      <div class="text-center fs-5">
+        <p>
+          © Copyright <span class="fw-bold">Tareq Gharibeh</span>. All Rights
+          Reserved
+        </p>
+        <p>Designed by Tareq Gharibeh</p>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

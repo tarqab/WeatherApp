@@ -1,0 +1,107 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+:root{
+    --main-color-primary:#424b7f;
+    --bs-tertiary-bg-rgb:30, 32, 43;
+    --color-of-button:#009ad8;
+    --bs-border-color:#009ad8;
+
+}
+body {
+   
+}
+
+.navbar-custom{
+    height: 20vh;
+    padding: 3rem;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 60% ;
+}
+.font-logo-first {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.font-logo-second {
+    font-size: .7rem;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--color-of-button) ;
+}
+
+/* =>>>>>>>>>>>>>>>>>>>>>>> */
+
+.home{
+    background-image: url(../assets/winter.jpg);
+    background-position: center;
+    background-size: cover;
+    padding:1rem 0;
+    height: 100vh;
+    background-color: #262837;
+    position: relative;
+}
+.layer {
+    background-color: rgba(0, 0, 0, 0.7) ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+form {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+ 
+}
+.input-search {
+    width: 60%;
+    height: 2.5rem;
+    display: flex;
+    border-radius: 2rem;
+    border:1px solid transparent;
+    overflow: hidden;
+}
+.input-search input{
+    padding: 1rem;
+    width: 100%;
+    outline: none;
+    border:none;
+
+}
+.input-search button {
+    background-color: var(--color-of-button) ;
+    outline: none;
+    border:none;
+    width:4rem
+}
+.temperature {
+    font-size: 3.5rem
+}
+.card-body {
+    height:80%;
+}
+.card-body-container {
+
+} 
+.present-day, .after-next-day {
+    background-color: #323544;
+}
+.next-day {
+    background-color: #1e202b;
+}
+
+h3 {
+    margin-top: 0.5rem;
+}
+footer {
+    position: sticky;
+    top: 100%;
+    padding: 3rem 0;
+    background-color: var(--color-of-button);
+}
