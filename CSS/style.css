@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing:border-box;
 }
+
 :root{
     --main-color-primary:#424b7f;
     --bs-tertiary-bg-rgb:30, 32, 43;
@@ -40,8 +41,8 @@ body {
     background-image: url(../assets/winter.jpg);
     background-position: center;
     background-size: cover;
-    padding:1rem 0;
-    height: 100vh;
+    padding:2rem 0;
+
     background-color: #262837;
     position: relative;
 }
@@ -100,8 +101,7 @@ h3 {
     margin-top: 0.5rem;
 }
 footer {
-    position: sticky;
-    top: 100%;
-    padding: 3rem 0;
+    padding: 1rem 0;
+    margin: 0;
     background-color: var(--color-of-button);
 }
