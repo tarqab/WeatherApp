@@ -105,3 +105,6 @@ footer {
     margin: 0;
     background-color: var(--color-of-button);
 }
+.body-info {
+    padding: 1rem 0;
+}

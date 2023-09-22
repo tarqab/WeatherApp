@@ -29,7 +29,7 @@ function displayTodayWeather(data) {
      <img src="https:/${data.current.condition.icon}" />
    </div>
   <p>${data.current.condition.text}</p>
-  <div class="mt-5">
+  <div class="my-3">
     <span class="me-2"
       ><i class="fa-solid fa-umbrella fa-lg me-1"></i>${data.current.humidity}%</span
     >
